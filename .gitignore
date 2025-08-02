@@ -1,0 +1,20 @@
+
+# Exclude SuperTuxKart data
+data/
+*.zip
+supertux_data.zip
+
+# Exclude large model files and checkpoints
+*.safetensors
+*.bin
+*.pt
+*.pth
+**/tensorboard/
+**/checkpoints/
+
+# Exclude temporary files
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.ipynb_checkpoints/
