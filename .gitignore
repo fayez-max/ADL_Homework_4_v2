@@ -1,16 +1,17 @@
 
-# Exclude SuperTuxKart data
-data/
-*.zip
+# Exclude large SuperTuxKart image datasets (but keep essential demo/grader data)
+data/train/
+data/valid/
 supertux_data.zip
+sample_data/
 
-# Exclude large model files and checkpoints
-*.safetensors
-*.bin
-*.pt
-*.pth
-**/tensorboard/
-**/checkpoints/
+# Keep these essential folders for comparison:
+# data/train_demo/
+# data/valid_grader/
+
+# Exclude large model checkpoints during training (we'll add them manually when needed)
+**/tensorboard/logs/
+*.log
 
 # Exclude temporary files
 __pycache__/
